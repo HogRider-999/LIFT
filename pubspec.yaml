@@ -1,0 +1,54 @@
+name: lift
+description: LIFT - Hardcore Minimalist Workout & Nutrition LIFT.
+# 版本號：1.0.0 是版本名，+1 是內部建置號
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  fl_chart: ^1.2.0
+  intl: ^0.18.1
+  shared_preferences: ^2.2.1
+  uuid: ^4.0.0
+  # ⭐️ 新增這兩個 QR Code 神器：
+  qr_flutter: ^4.1.0      # 產生 QR Code
+  mobile_scanner: ^5.1.0 # 啟動相機掃描 QR Code
+  google_mlkit_text_recognition: ^0.13.0  # 專門負責讀取照片中的文字  
+  # 🔥 LIFT 核心功能套件
+ 
+  peanut: ^6.0.1
+  confetti: ^0.8.0
+  image_picker: ^1.2.1
+  path_provider: ^2.1.5
+  share_plus: ^12.0.2
+  http: ^1.6.0
+  model_viewer_plus: ^1.10.0
+  archive: ^4.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1" # 加入這行
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png" # 你的圖片路徑
+  adaptive_icon_background: "#1A1A1A" # Android 背景顏色（配合 LIFT 的深色主題）
+  adaptive_icon_foreground: "assets/icon.png" # 前景圖
+  
+  # 🔥 自動生成 App Icon 的工具
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter:
+  uses-material-design: true
+
+  # ── 📦 資源檔案宣告 ──────────────────────────────
+  assets:
+    - assets/icon.png
+    - assets/human_body.glb
